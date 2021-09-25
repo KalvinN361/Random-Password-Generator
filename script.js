@@ -25,7 +25,7 @@ uppercaseArray [1]
 
 
 
-if (Numbers){
+if (numbers){
   resultArray = resultArray.concat(numbArray);
   
 }
