@@ -15,20 +15,31 @@ var characterArray = ["@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "_", "="
 var resultArray = [];
 var userArray = [];
 
-uppercaseArray [1]
-//-----------------------------------------------------------------
+uppercaseArray [1];
+
+
   var numCharacter = prompt ("How much number of Character you want between 8 and 128?");
   var numbers = confirm ("Would you like numbers in your password?");
   var upperCases = confirm ("Would you like numbers uppercase characters in your password?");
   var lowerCases = confirm ("Would you like numbers lowercases characters in your password?");
   var specChar = confirm ("Would you like numbers special characters in your password?");
 
-
+  if (numCharacter < 0 ) {
+    alert("Please use at least 8 chracters");
+    return;
+  }
+  
+  if (numCharacter > 0 ) {
+    alert("Please use less than 128 characters");
+    return;
+  }
+  
 
 if (numbers){
   resultArray = resultArray.concat(numbArray);
   
 }
+
 
 if (upperCases){
   resultArray = resultArray.concat(uppercaseArray);
@@ -44,6 +55,7 @@ if (specChar){
   resultArray = resultArray.concat(characterArray);
 }
 console.log(resultArray)
+
 
 // loop
 for (var i = 0; i < numCharacter; i++) {
