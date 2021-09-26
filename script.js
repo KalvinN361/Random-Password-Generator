@@ -24,17 +24,7 @@ uppercaseArray [1];
   var lowerCases = confirm ("Would you like numbers lowercases characters in your password?");
   var specChar = confirm ("Would you like numbers special characters in your password?");
 
-  if (numCharacter < 0 ) {
-    alert("Please use at least 8 chracters");
-    return;
-  }
-  
-  if (numCharacter > 0 ) {
-    alert("Please use less than 128 characters");
-    return;
-  }
-  
-
+// attempted to add an alert warning if user selects less than 7 and more than 128 characters but error in code. 
 if (numbers){
   resultArray = resultArray.concat(numbArray);
   
