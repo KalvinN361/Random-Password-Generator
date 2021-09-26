@@ -19,12 +19,23 @@ uppercaseArray [1];
 
 
   var numCharacter = prompt ("How much number of Character you want between 8 and 128?");
+ 
+
+  if (numCharacter < 8 ) {
+    alert("Please use at least 8 chracters");
+    return;
+  }
+  
+  if (numCharacter >= 128 ) {
+    alert("Please use less than 128 characters");
+    return;
+  }
+  
   var numbers = confirm ("Would you like numbers in your password?");
   var upperCases = confirm ("Would you like numbers uppercase characters in your password?");
   var lowerCases = confirm ("Would you like numbers lowercases characters in your password?");
   var specChar = confirm ("Would you like numbers special characters in your password?");
 
-// attempted to add an alert warning if user selects less than 7 and more than 128 characters but error in code. 
 if (numbers){
   resultArray = resultArray.concat(numbArray);
   
